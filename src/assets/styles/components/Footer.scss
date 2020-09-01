@@ -1,0 +1,134 @@
+.Footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  flex-direction: row;
+  background-color: hsl(255, 11%, 22%);
+}
+
+.Footer_img {
+  filter: hue-rotate(0) brightness(100);
+  position: relative;
+  top: -35px;
+  left: 70px;
+}
+
+.Footer_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  //   background: red;
+  // margin-left: 40px;
+}
+
+.Footer_menu ol {
+  margin: 10px 40px;
+  height: 60%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.Footer_menu ol h3 {
+  margin: 5px 0;
+  width: 100%;
+  // text-align: left;
+  color: white;
+}
+
+.Anchor {
+  margin: 5px 0;
+  width: 100%;
+  font-size: 14px;
+  // text-align: left;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+.ContainerImages {
+  margin: 0;
+  //   background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -45px;
+  right: 70px;
+}
+
+.ContainerImages svg {
+  margin: 15px;
+  color: white;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+.ContainerImages svg:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+// -----------------RESPONSIVE DESIGN---------------------------
+
+@media screen and (max-width: 1000px) {
+  .Footer {
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+  }
+
+  .Footer_menu {
+    height: 55%;
+  }
+
+  .Footer_img {
+    left: 0;
+    top: 0;
+  }
+
+  .Anchor {
+    font-size: 16px;
+  }
+
+  .ContainerImages {
+    left: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Footer {
+    height: 700px;
+  }
+
+  .Footer_img {
+    margin-top: 20px;
+  }
+
+  .Footer_menu {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 75%;
+    width: 100%;
+  }
+
+  .Footer_menu ol {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ContainerImages {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,255 @@
+.Header {
+  width: 100%;
+  height: 90px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  // background: blue;
+}
+
+// ----------PRIMER CONTAINER------------------
+
+.Header_PrimerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 160px;
+  height: 100%;
+  width: 35%;
+}
+
+.Header_PrimerContainer-Menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+// ------------------TODAS LAS a DEL HEADER------------
+
+.Header_PrimerContainer-Menu a {
+  cursor: pointer;
+  font-weight: bold;
+  color: hsl(0, 0%, 75%);
+  height: 90%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.Header_PrimerContainer-Menu a:hover {
+  border-bottom: 4px solid hsl(180, 66%, 49%);
+  color: black;
+}
+// :[aria-current]  {
+//   border-bottom: 4px solid hsl(180, 66%, 49%);
+//   color: black;
+// }
+
+.SecondC-a {
+  cursor: pointer;
+  font-weight: bold;
+  color: hsl(0, 0%, 75%);
+  height: 90%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.SecondC-a:hover {
+  border-bottom: 4px solid hsl(180, 66%, 49%);
+  color: black;
+}
+
+.prueba {
+  border-bottom: 4px solid hsl(180, 66%, 49%);
+  color: black;
+}
+
+// ---------------SEGUNDO CONTAINER-----------------
+
+.Header_SecondContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 160px;
+  height: 100%;
+  width: 15%;
+}
+
+.Header_SecondContainer-Button {
+  margin: 0;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 25px;
+  height: 37px;
+  width: 100px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.Header_SecondContainer-Button:disabled {
+  opacity: 0.3;
+}
+
+.Header_SecondContainer-Button:hover {
+  color: white;
+}
+
+.BurguerMenu {
+  width: 40px;
+  height: 40px;
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: white;
+  &:focus {
+    outline: none;
+  }
+}
+
+.BurguerMenu img {
+  width: 20px;
+  margin: 0;
+  height: 20px;
+}
+
+.fixed {
+  width: 40px;
+  height: 40px;
+  // display: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: hsl(257, 27%, 26%);
+  &:focus {
+    outline: none;
+  }
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 5px;
+  position: fixed;
+  right: 25px;
+  // top: 20px;
+  display: none;
+  z-index: 1;
+}
+
+.fixed img {
+  width: 20px;
+  filter: hue-rotate(0) brightness(100);
+  height: 20px;
+  position: relative;
+  top: -7px;
+}
+
+// -------------------Responsive Design-----------------
+
+@media screen and (max-width: 1100px) {
+  .Header {
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+  }
+
+  .Header_PrimerContainer {
+    margin: 0px;
+    flex-direction: column;
+    height: 50%;
+    // background-color: red;
+    width: 100%;
+  }
+
+  .Header_PrimerContainer img {
+    margin-top: 15px;
+  }
+
+  .Header_PrimerContainer-Menu {
+    width: 60%;
+    height: 50%;
+  }
+
+  .Header_SecondContainer {
+    width: 100%;
+    height: 50%;
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+
+  .Header_SecondContainer a {
+    width: 100%;
+    height: 50%;
+  }
+
+  .Header_SecondContainer a:hover {
+    border: none;
+  }
+
+  .Header_SecondContainer-Button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .Header {
+    height: 90px;
+    flex-direction: row;
+  }
+
+  .Header_PrimerContainer-Menu {
+    display: none;
+  }
+
+  .Header_SecondContainer {
+    display: none;
+  }
+
+  .Header-Logo {
+    margin: 0;
+    justify-content: left;
+  }
+
+  .BurguerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Header-Logo {
+    position: relative;
+    right: 20px;
+    top: -10px;
+  }
+
+  .BurguerMenu {
+    position: relative;
+    right: -20px;
+    top: -10px;
+  }
+}

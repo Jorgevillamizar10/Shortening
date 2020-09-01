@@ -1,0 +1,185 @@
+.SecondSection {
+  max-width: 100%;
+  height: 850px;
+  background-color: rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// ------------ PRIMER CONTAINER -----------------
+
+.SecondSection_Fcontainer {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  // background: green;
+}
+
+.SecondSection_Fcontainer h2 {
+  position: relative;
+  top: 35px;
+  font-size: 35px;
+  color: black;
+}
+
+.SecondSection_Fcontainer p {
+  color: hsl(0, 0%, 75%);
+}
+// ------------ SEGUNDO CONTAINER ----------------
+.SecondSection_Scontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 75%;
+  width: 76.5%;
+}
+
+.Separador-x {
+  color: hsl(180, 66%, 49%);
+  margin: 0;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.SecondSection_Scontainer div {
+  background: white;
+  height: 55%;
+  position: relative;
+}
+
+.Icon {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  outline: none;
+  background-color: hsl(257, 27%, 26%);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -45px;
+  left: 30px;
+}
+
+.SecondSection_Scontainer div h3 {
+  margin: 30px;
+  position: relative;
+  color: black;
+  top: -40px;
+}
+
+.SecondSection_Scontainer div p {
+  margin: 30px;
+  font-size: 14px;
+  color: hsl(0, 0%, 75%);
+  position: relative;
+  top: -50px;
+}
+
+.Firts {
+  top: -40px;
+}
+
+.Last {
+  top: 40px;
+}
+
+.Separador-y {
+  display: none;
+}
+
+// -------RESPONSIVE DESGIN---------------------------
+
+@media screen and (max-width: 1240px) {
+  .SecondSection_Scontainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .SecondSection_Fcontainer {
+    height: 30%;
+    position: relative;
+    top: -50px;
+  }
+
+  .SecondSection {
+    height: 1350px;
+  }
+
+  .SecondSection_Scontainer {
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+  }
+
+  .SecondSection_Scontainer div {
+    margin: 10px 0;
+    height: 25%;
+    width: 40%;
+    text-align: center;
+  }
+
+  .Firts {
+    top: 0;
+  }
+
+  .Last {
+    top: 0;
+  }
+
+  .Separador-x {
+    display: none;
+  }
+
+  .Separador-y {
+    display: block;
+    color: hsl(180, 66%, 49%);
+    margin: 0;
+    font-weight: bolder;
+    font-size: 35px;
+  }
+
+  .SecondSection_Scontainer div h3 {
+    margin: 20px 10px;
+    font-size: 20px;
+  }
+
+  .SecondSection_Scontainer div p {
+    margin: 10px;
+  }
+
+  .Icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .SecondSection_Scontainer div {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .SecondSection_Scontainer div {
+    width: 80%;
+  }
+
+  .SecondSection_Fcontainer h2 {
+    font-size: 25px;
+    top: 15px;
+  }
+
+  .SecondSection_Fcontainer p {
+    color: hsl(0, 0%, 75%);
+    margin: 0 20px;
+  }
+}
